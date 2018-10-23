@@ -28,35 +28,19 @@
         <button class="slds-button slds-button_brand" onclick="googleAnalyzeSentiment()">送信</button>
         
         <div class="slds-form-element">
-            <span class="slds-form-element__label">結果</span>
-            <div class="demo-only" style="width: 30rem;">
-                <article class="slds-tile">
-                    <h3 class="slds-tile__title slds-truncate" title="score">スコア</h3>
-                    <div class="slds-tile__detail">
-                    <dl class="slds-list_horizontal slds-wrap">
-                        <dt class="slds-item_label slds-text-color_weak slds-truncate" title="First Label">ポジティブ</dt>
-                        <dd class="slds-item_detail slds-truncate" title="Description for first label">0.25 ~ 1.0</dd>
-                        <dt class="slds-item_label slds-text-color_weak slds-truncate" title="Second Label">ニュートラル</dt>
-                        <dd class="slds-item_detail slds-truncate" title="Description for second label">-0.25 ~ 0.25</dd>
-                        <dt class="slds-item_label slds-text-color_weak slds-truncate" title="Second Label">ネガティブ</dt>
-                        <dd class="slds-item_detail slds-truncate" title="Description for second label">-1.0 ~ -0.25</dd>
-                    </dl>
-                    </div>
-                </article>
-            </div>
-            <div style="padding-left: 2rem; padding-top: 5rem; position: relative;">
+            <div style="padding-center: 2rem; padding-top: 5rem; position: relative;">
                 <div class="slds-form-element">
                     <div class="slds-form-element__icon slds-align-middle">
                     <button class="slds-button slds-button_icon slds-button slds-button_icon" aria-describedby="help" title="Help">
                         <svg class="slds-button__icon" aria-hidden="true">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#info" />
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#info" />
                         </svg>
                         <span class="slds-assistive-text">Help</span>
                     </button>
                     </div>
                 </div>
                 <div class="slds-popover slds-popover_tooltip slds-nubbin_bottom-left" role="tooltip" id="help" style="position: absolute; top: 0px; left: 15px;">
-                    <div class="slds-popover__body">マグニチュードは感情の振れ幅を示します。0が最低値です。</div>
+                    <div class="slds-popover__body">スコアは</br>0.25~1.0 ポジティブ</br>-0.25~0.25 ニュートラル</br>-1.0~-0.25 ポジティブ</br>という評価になります。</br>マグニチュードは感情の振れ幅を示します。0が最低値です。</div>
                 </div>
             </div>
             <div class="slds-form-element__control slds-border_bottom">
