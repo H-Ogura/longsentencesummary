@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <title>fsi-kinnyuu-fit-2018</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/salesforce-lightning-design-system.css" />
+    
+</head>
+<body>
+    <header align="center" >
+        <nav class="slds-col slds-size--1-of-1">
+            <div class="slds-page-header" role="banner">
+                <div class="slds-media__body slds-p-top--x-small">
+                <h1 class="slds-text-heading--large">FIT展 2018</h1>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section align="left" style="margin-bottom: 2em;line-height: 2em">
+        <div class="slds-form-element">
+            <label class="slds-form-element__label" for="textarea-id-01">Google Cloud Natural Language API</label>
+            <div class="slds-form-element__control">
+                <textarea id="textarea-id-01" class="slds-textarea" placeholder="感情解析させたい文章を入力してください"></textarea>
+            </div>
+        </div>
+        <button class="slds-button slds-button_brand" onclick="googleAnalyzeSentiment()">送信</button>
+        
+        <h2></h2>
+        <div>
+            <pre><code id="results" style="font-size: 1.5em"></code></pre>
+        </div>
+    </section>
+
+    <!-- スクリプト読み込み -->
+    <script src="/socket.io/socket.io.js"></script>
+    <!-- 送信ボタン -->
+    <script type="text/javascript">
+        function googleAnalyzeSentiment(){
+
+            socket.emit('googleAnalyzeSentiment', {
+                content: document.getElementById('results').innerHTML
+            }, function(body) {
+                console.log(JSON.stringify(JSON.parse(body), undefined, 4));
+                document.getElementById('results').innerHTML = JSON.stringify(JSON.parse(body), undefined, 4);
+            });
+        }
+    </script>
+</body>
