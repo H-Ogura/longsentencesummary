@@ -26,6 +26,8 @@ http.createServer(function(request, response) {
 var io = require('socket.io').listen(http);*/
 io.sockets.on('connection', function (socket) {
     socket.on('googleAnalyzeSentiment', function (params, cb) {
+        console.log(params);
+        
         const document = {
             content: params.content,
             type: 'PLAIN_TEXT'

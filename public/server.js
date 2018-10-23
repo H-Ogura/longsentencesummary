@@ -1,7 +1,7 @@
 // 送信ボタン
 function googleAnalyzeSentiment(){
-    alert(document.getElementById('textarea-id-01').);
-    
+    alert(document.getElementById('textarea-id-01').innerText);
+
     socket.emit('googleAnalyzeSentiment', {
         content: document.getElementById('textarea-id-01').innerText
     }, function(body) {
