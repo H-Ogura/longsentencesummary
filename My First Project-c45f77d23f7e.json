@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "promising-flash-220301",
+  "private_key_id": "c45f77d23f7e82b85994b8103dea2d5dfa6ee4fd",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCLdYVA1f0y3zR9\nTR+kGDxuUCxKx1rCeKLomTdfv0cGD2S5g/2L/JF7NAjlfIpIjv7tVyYODtYlHPDz\ncvgggm9GJkHQEn8MNPyX2uEXRil+sVxUGoVUPg7yA8AewQVW+8n5e2c1kwCKJY1i\nmo4rAL65S/d+fk4L8TbAWISPBaq+vzX05QMlXDuBcOoxTMi86+7Ij4iXT9/blfVJ\nouNavPRfXJMa+7393S0FkZixMi7FSUauWZpxtATqHVNRl/RDHTRyegS26dVn9tFK\nrf4R4dSuKgHxDXV792Vkd1mWcS+uL14nxFos073hvQ+V3YDan5X7T23qQIbqkB4n\nVJTskGaVAgMBAAECggEAPVdXYfHd+bLg+R5jxP9eEV2VZdzzKGf8rBe8mhJd8KXz\ntX//lcPlz83O/fX+MzUmn4m+NN/ExLVKrKKMzmvg+veX6ihAlsN1uWuup1iWpuHn\njRzPOYNEeqI4rq5TJXQB3okvmAqNabZjzpPR5cthmMp31b1DohAa95bX07r35Ac7\ntIT6CGwkphLR+SYXCOR/FOb86UWkYEWmq8iRXVMTrdZ7dQkg42Sqc1uGFIg5Xu/t\nFLLUNCW8aR7ZrOa3xNtKLvWGXRTq8RI4rpH6f2Qj0/xTkqkjuMtET7CsgqkJ2tGE\nP+cptF+JFAOI30qYKTCQbqDF2THnUda74A2TckE+vwKBgQDBqg+Gzo2gYZKoYf3z\ndUQkXfyAp7t7/O87tp828UcL1wLD2VxYRGc7ZB7QQezFPlCaA8KCi1OFdcEoJVhR\nsXyijjgSsnR44X1KourScVZytpCD+0NZmWPx3RCN3+bXJTnuI0wObfWpaw5BAWvr\nsO1K+jQxx4IMqKe6zIrLEDi7AwKBgQC4WPK+JWbtaUowPneiSpqCgpHFhyoFH0M/\ngCG/KPyyBONcQ6NHZqt0va0LonGN/7hI4IhRFCBiDT+GlHAnQCRFRD9XKLGXGkQj\nJzZrWPFE6tB9Yy4muFpLRwZ90TshNHf/MEwJseZG+ys3ypAlZYKyGU8YFI4L4+Mb\nS0B5kTSYhwKBgQCf+5eF+n3+vnwDw6ehBf97t3SO54E2xNTwVEWkgp75Re5P0fC6\nLg/FfUkDK2Kn8nltMavuYaBmgMdHHcqe+esG8kuaDnevID97d6haniwW6X/qt5eE\nnfV1aPRy70Ln+iWn9tqulOG6yehlhQIdGvR72sNhV/mz8WNWKgCCDW1/9wKBgQCN\n15LfD3RE1DDLMiVm8DQ2mzSCYd/JFSbvIy3UIjtc1joCceCePbdLGe6d9x2cfthS\n6sC4cd4A0+S/LlOlP8soqLx72cnbU9B9o9xReJwbxPkqoTePf2WqajnqcSUoBXEX\nHxhClWlz0CqOwQNsYtDPLH4ZLyekqnHCPIKdh0aK3QKBgCSFnn3WdRjplT2TVCZC\niOjMEEHxxa3LRwe6oH+/8ysOrFz9rEu3V9WXRdrmj4QDN6WLx6RAhnTmrpDWgM5O\nKxbYaS1UMk2ZZ2CQtKET13v0PaWujbBhCpn1hfOkkRAYXRnClljNTdTDRVnhRa+k\nGKYeeiGir6oqPToSgI7jkFzl\n-----END PRIVATE KEY-----\n",
+  "client_email": "fsi-kinnyuuu-fit-2018@promising-flash-220301.iam.gserviceaccount.com",
+  "client_id": "107861331501802157843",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/fsi-kinnyuuu-fit-2018%40promising-flash-220301.iam.gserviceaccount.com"
+}
