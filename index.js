@@ -2,7 +2,17 @@ const language = require('@google-cloud/language');
 // Instantiates a client
 const client = new language.LanguageServiceClient();
 
+const express = require('express');
 const http = require('http');
+const app = express();
+app.use(express.static('./public'));
+var server = require('http').Server(app);
+
+server.listen(process.env.PORT, () => {
+    console.log(`listening on ${process.env.PORT}`);
+});
+var io = require('socket.io').listen(server);
+/* node-static は npm からアンインストールあとでする
 var static = require('node-static');
 var fs = new static.Server('./public');
 
@@ -13,7 +23,7 @@ http.createServer(function(request, response) {
 //}).listen(process.env.PORT, process.env.IP);
 }).listen(process.env.PORT);
 
-var io = require('socket.io').listen(http);
+var io = require('socket.io').listen(http);*/
 io.sockets.on('connection', function (socket) {
     socket.on('googleAnalyzeSentiment', function (params, cb) {
         const document = {
