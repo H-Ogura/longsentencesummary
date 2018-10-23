@@ -10,7 +10,8 @@ http.createServer(function(request, response) {
     request.addListener('end', function () {
         fs.serve(request, response);
     }).resume();
-}).listen(process.env.PORT, process.env.IP);
+//}).listen(process.env.PORT, process.env.IP);
+}).listen(process.env.PORT);
 
 var io = require('socket.io').listen(http);
 io.sockets.on('connection', function (socket) {
