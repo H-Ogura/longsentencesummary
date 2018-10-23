@@ -9,7 +9,7 @@ const http = require('http');
 http.createServer(function(request, response) {
     response.writeHead(200, {'Content-Type': 'text/html'});
     var output = fs.readFileSync("./public/index.html", "utf-8");
-    res.end(output);
+    response.end(output);
 }).listen(process.env.PORT, process.env.IP);
 
 var io = require('socket.io').listen(http);
