@@ -34,10 +34,10 @@ io.sockets.on('connection', function (socket) {
         client
             .analyzeSentiment({document: document})
             .then(results => {
-                console.log(results);
+                JSON.stringify(results);
                 const sentiment = results[0].documentSentiment;
 
-                console.log(`Text: ${text}`);
+                console.log(`Text: ${params.content}`);
                 console.log(`Sentiment score: ${sentiment.score}`);
                 console.log(`Sentiment magnitude: ${sentiment.magnitude}`);
                 cb(results);

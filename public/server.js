@@ -2,7 +2,7 @@
 function googleAnalyzeSentiment(){
 
     socket.emit('googleAnalyzeSentiment', {
-        content: document.getElementById('results').innerHTML
+        content: document.getElementById('textarea-id-01').innerHTML
     }, function(body) {
         console.log(JSON.stringify(JSON.parse(body), undefined, 4));
         document.getElementById('results').innerHTML = JSON.stringify(JSON.parse(body), undefined, 4);
