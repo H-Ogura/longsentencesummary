@@ -12,18 +12,7 @@ server.listen(process.env.PORT, () => {
     console.log(`listening on ${process.env.PORT}`);
 });
 var io = require('socket.io').listen(server);
-/* node-static は npm からアンインストールあとでする
-var static = require('node-static');
-var fs = new static.Server('./public');
 
-http.createServer(function(request, response) {
-    request.addListener('end', function () {
-        fs.serve(request, response);
-    }).resume();
-//}).listen(process.env.PORT, process.env.IP);
-}).listen(process.env.PORT);
-
-var io = require('socket.io').listen(http);*/
 io.sockets.on('connection', function (socket) {
     socket.on('googleAnalyzeSentiment', function (params, cb) {
         console.log(params);
