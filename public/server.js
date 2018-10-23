@@ -5,7 +5,7 @@ function googleAnalyzeSentiment(){
     socket.emit('googleAnalyzeSentiment', {
         content: txtObj.value
     }, function(body) {
-        document.getElementById('results').innerHTML = JSON.stringify(JSON.parse(body));
+        document.getElementById('results').innerText = JSON.stringify(body);
     });
 }
 
