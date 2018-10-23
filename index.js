@@ -5,11 +5,12 @@ const language = require('@google-cloud/language');
 const client = new language.LanguageServiceClient();
 const fs = require("fs");
 const http = require('http');
+var file = new static.Server('./public');
 
 http.createServer(function(request, response) {
-    response.writeHead(200, {'Content-Type': 'text/html'});
-    var output = fs.readFileSync("./public/index.html", "utf-8");
-    response.end(output);
+    request.addListener('end', function () {
+        file.serve(request, response);
+    }).resume();
 }).listen(process.env.PORT, process.env.IP);
 
 var io = require('socket.io').listen(http);
