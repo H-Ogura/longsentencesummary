@@ -35,20 +35,5 @@
 
     <!-- スクリプト読み込み -->
     <script src="/socket.io/socket.io.js"></script>
-    >
-    <script type="text/javascript">
-        // 送信ボタン
-        function googleAnalyzeSentiment(){
-
-            socket.emit('googleAnalyzeSentiment', {
-                content: document.getElementById('results').innerHTML
-            }, function(body) {
-                console.log(JSON.stringify(JSON.parse(body), undefined, 4));
-                document.getElementById('results').innerHTML = JSON.stringify(JSON.parse(body), undefined, 4);
-            });
-        }
-
-        // ソケット接続を有効にする
-        var socket = io.connect('/');
-    </script>
+    <script src="script.js"></script>
 </body>
