@@ -3,9 +3,8 @@
 const language = require('@google-cloud/language');
 // Instantiates a client
 const client = new language.LanguageServiceClient();
-const fs = require("fs");
 const http = require('http');
-var file = new static.Server('./public');
+const file = new static.Server('./public');
 
 http.createServer(function(request, response) {
     request.addListener('end', function () {
