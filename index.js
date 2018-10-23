@@ -45,6 +45,8 @@ io.sockets.on('connection', function (socket) {
             .catch(err => {
                 console.error('ERROR:', err);
             });
+
+        cb(results);
     });
 });
 /*
