@@ -1,6 +1,7 @@
 const language = require('@google-cloud/language');
 // Instantiates a client
 const client = new language.LanguageServiceClient();
+
 const http = require('http');
 var static = require('node-static');
 var fs = new static.Server('./public');
