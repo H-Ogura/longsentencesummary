@@ -1,12 +1,14 @@
 // 送信ボタン
 function googleAnalyzeSentiment(){
-    alert(document.getElementById('textarea-id-01'));
-
+    //alert(document.getElementById('textarea-id-01'));
+    var txtObj = document.getElementById('textarea-id-01');
+    alert(txtObj.value);
+    
     socket.emit('googleAnalyzeSentiment', {
-        content: document.getElementById('textarea-id-01')
+        //content: document.getElementById('textarea-id-01')
+        content: txtObj.value
     }, function(body) {
-        console.log(JSON.parse(body));
-        document.getElementById('results').innerHTML = JSON.parse(body);
+        document.getElementById('results').innerHTML = body;
     });
 }
 
