@@ -27,7 +27,7 @@ var io = require('socket.io').listen(http);*/
 io.sockets.on('connection', function (socket) {
     socket.on('googleAnalyzeSentiment', function (params, cb) {
         console.log(params);
-        
+
         const document = {
             content: params.content,
             type: 'PLAIN_TEXT'
@@ -36,7 +36,7 @@ io.sockets.on('connection', function (socket) {
         client
             .analyzeSentiment({document: document})
             .then(results => {
-                JSON.stringify(results);
+                console.log(JSON.stringify(results));
                 const sentiment = results[0].documentSentiment;
 
                 console.log(`Text: ${params.content}`);

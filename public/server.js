@@ -5,8 +5,8 @@ function googleAnalyzeSentiment(){
     socket.emit('googleAnalyzeSentiment', {
         content: document.getElementById('textarea-id-01')
     }, function(body) {
-        console.log(JSON.stringify(JSON.parse(body), undefined, 4));
-        document.getElementById('results').innerHTML = JSON.stringify(JSON.parse(body), undefined, 4);
+        console.log(JSON.parse(body));
+        document.getElementById('results').innerHTML = JSON.parse(body);
     });
 }
 
