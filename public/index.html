@@ -35,8 +35,9 @@
 
     <!-- スクリプト読み込み -->
     <script src="/socket.io/socket.io.js"></script>
-    <!-- 送信ボタン -->
+    >
     <script type="text/javascript">
+        // 送信ボタン
         function googleAnalyzeSentiment(){
 
             socket.emit('googleAnalyzeSentiment', {
@@ -46,5 +47,8 @@
                 document.getElementById('results').innerHTML = JSON.stringify(JSON.parse(body), undefined, 4);
             });
         }
+
+        // ソケット接続を有効にする
+        var socket = io.connect('/');
     </script>
 </body>
