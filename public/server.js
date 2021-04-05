@@ -1,3 +1,4 @@
+/*
 // 送信ボタン
 function googleAnalyzeSentiment(){
     var txtObj = document.getElementById('textarea-id-01');
@@ -11,3 +12,37 @@ function googleAnalyzeSentiment(){
 
 // ソケット接続を有効にする
 var socket = io.connect('/');
+*/
+http.createServer(function(req, res) {
+    if(req.method === 'GET') {
+      res.writeHead(200, {'Content-Type' : 'text/html'});
+      res.end(html);
+    } else if(req.method === 'POST') {
+      var data = '';
+      
+     //POSTデータを受けとる
+     req.on('data', function(chunk) {data += chunk})
+        .on('end', function() {
+  
+          console.log(data);
+          res.end(html);
+  
+        })
+  
+     }
+  }).listen(3000);
+
+  function abstract() {
+    var options = {
+        url: 'https://www.sejuku.net/blog/sample',
+        method: 'POST',
+        form: {"name":"太郎"}
+    }
+
+    request(options, function (error, response, body) {
+ 
+        console.log(body);
+     
+     
+    });
+  }
