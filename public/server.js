@@ -34,9 +34,13 @@ http.createServer(function(req, res) {
 
   function abstract() {
     var options = {
-        url: 'https://www.sejuku.net/blog/sample',
+        url: 'https://clapi.asahi.com/abstract',
         method: 'POST',
-        form: {"name":"太郎"}
+        form: {
+            "text":"太郎",
+            length:"200",
+            auto_paragraph:"true"
+        }
     }
 
     request(options, function (error, response, body) {
@@ -45,4 +49,8 @@ http.createServer(function(req, res) {
      
      
     });
+  }
+
+  function execlongsentencesummary() {
+      abstract();
   }
