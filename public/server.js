@@ -38,8 +38,8 @@ http.createServer(function(req, res) {
         method: 'POST',
         form: {
             "text":"太郎",
-            length:"200",
-            auto_paragraph:"true"
+            "length":"200",
+            "auto_paragraph":"true"
         }
     }
 
